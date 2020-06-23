@@ -9,8 +9,8 @@ body{
     min-height: 20em;
     margin-top: 5em;
 
-    border: 1px solid #eee;
-    box-shadow: 4px 6px 6px #888;
+    border: 1px solid rgb(250, 145, 189);
+    box-shadow: 4px 6px 6px rgb(250, 145, 189);
 
 }
 
@@ -46,12 +46,12 @@ body{
 .todo-items .ctrlbar > button {
     border: none;
     background: none;
-    color: blue;
+    color: rgba(243, 45, 144, 0.904);
     cursor: pointer;
 }
 
 .todo-items .ctrlbar > button:disabled {
-    color: grey;
+    color: rgb(158, 97, 123);
     /* cursor: pointer; */
 }
 .todo-items .ctrlbar > button:disabled:hover {
