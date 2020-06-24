@@ -86,7 +86,24 @@ function renderTaskItems() {
 
 function renderTaskCtrlBar(tasks,taskIdx) {
     let ctrlbarEl = document.createElement("div");
-    ctrlbarEl.className ="ctrlbar"; 
+    ctrlbarEl.className ="ctrlbar";
+    
+    let impEl = document.createElement("button");
+    var div = document.getElementsByTagName('impEl')[0];
+    impEl.innerText = "♡";
+    var count = 0;
+    impEl.onclick = function (a) {
+        count++
+        if (count % 2 === 1) {
+            impEl.innerText = "♥";
+        } else {
+            impEl.innerText = "♡";
+        }
+    }
+
+    ctrlbarEl.append(impEl);
+
+    ctrlbarEl.append(impEl);
 
     let upEl = document.createElement("button");
     if (taskIdx === 0) {
